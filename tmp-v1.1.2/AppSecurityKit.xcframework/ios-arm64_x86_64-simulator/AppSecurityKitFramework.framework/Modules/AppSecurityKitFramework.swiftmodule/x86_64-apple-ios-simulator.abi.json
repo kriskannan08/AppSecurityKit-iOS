@@ -1,0 +1,2629 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AppSecurityKitFramework",
+    "printedName": "AppSecurityKitFramework",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DeviceCheck",
+        "printedName": "DeviceCheck",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SecurityEvent",
+        "printedName": "SecurityEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "jailbreakDetected",
+            "printedName": "jailbreakDetected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppSecurityKitFramework.SecurityEvent.Type) -> AppSecurityKitFramework.SecurityEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecurityEvent",
+                    "printedName": "AppSecurityKitFramework.SecurityEvent",
+                    "usr": "s:23AppSecurityKitFramework0B5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppSecurityKitFramework.SecurityEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecurityEvent",
+                        "printedName": "AppSecurityKitFramework.SecurityEvent",
+                        "usr": "s:23AppSecurityKitFramework0B5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23AppSecurityKitFramework0B5EventO17jailbreakDetectedyA2CmF",
+            "mangledName": "$s23AppSecurityKitFramework0B5EventO17jailbreakDetectedyA2CmF",
+            "moduleName": "AppSecurityKitFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "debuggerDetected",
+            "printedName": "debuggerDetected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppSecurityKitFramework.SecurityEvent.Type) -> AppSecurityKitFramework.SecurityEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecurityEvent",
+                    "printedName": "AppSecurityKitFramework.SecurityEvent",
+                    "usr": "s:23AppSecurityKitFramework0B5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppSecurityKitFramework.SecurityEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecurityEvent",
+                        "printedName": "AppSecurityKitFramework.SecurityEvent",
+                        "usr": "s:23AppSecurityKitFramework0B5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23AppSecurityKitFramework0B5EventO16debuggerDetectedyA2CmF",
+            "mangledName": "$s23AppSecurityKitFramework0B5EventO16debuggerDetectedyA2CmF",
+            "moduleName": "AppSecurityKitFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "emulatorDetected",
+            "printedName": "emulatorDetected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppSecurityKitFramework.SecurityEvent.Type) -> AppSecurityKitFramework.SecurityEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecurityEvent",
+                    "printedName": "AppSecurityKitFramework.SecurityEvent",
+                    "usr": "s:23AppSecurityKitFramework0B5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppSecurityKitFramework.SecurityEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecurityEvent",
+                        "printedName": "AppSecurityKitFramework.SecurityEvent",
+                        "usr": "s:23AppSecurityKitFramework0B5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23AppSecurityKitFramework0B5EventO16emulatorDetectedyA2CmF",
+            "mangledName": "$s23AppSecurityKitFramework0B5EventO16emulatorDetectedyA2CmF",
+            "moduleName": "AppSecurityKitFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "runtimeManipulationDetected",
+            "printedName": "runtimeManipulationDetected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppSecurityKitFramework.SecurityEvent.Type) -> AppSecurityKitFramework.SecurityEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecurityEvent",
+                    "printedName": "AppSecurityKitFramework.SecurityEvent",
+                    "usr": "s:23AppSecurityKitFramework0B5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppSecurityKitFramework.SecurityEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecurityEvent",
+                        "printedName": "AppSecurityKitFramework.SecurityEvent",
+                        "usr": "s:23AppSecurityKitFramework0B5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23AppSecurityKitFramework0B5EventO27runtimeManipulationDetectedyA2CmF",
+            "mangledName": "$s23AppSecurityKitFramework0B5EventO27runtimeManipulationDetectedyA2CmF",
+            "moduleName": "AppSecurityKitFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "appTamperingDetected",
+            "printedName": "appTamperingDetected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppSecurityKitFramework.SecurityEvent.Type) -> AppSecurityKitFramework.SecurityEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecurityEvent",
+                    "printedName": "AppSecurityKitFramework.SecurityEvent",
+                    "usr": "s:23AppSecurityKitFramework0B5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppSecurityKitFramework.SecurityEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecurityEvent",
+                        "printedName": "AppSecurityKitFramework.SecurityEvent",
+                        "usr": "s:23AppSecurityKitFramework0B5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23AppSecurityKitFramework0B5EventO20appTamperingDetectedyA2CmF",
+            "mangledName": "$s23AppSecurityKitFramework0B5EventO20appTamperingDetectedyA2CmF",
+            "moduleName": "AppSecurityKitFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "sslPinningFailed",
+            "printedName": "sslPinningFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppSecurityKitFramework.SecurityEvent.Type) -> AppSecurityKitFramework.SecurityEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecurityEvent",
+                    "printedName": "AppSecurityKitFramework.SecurityEvent",
+                    "usr": "s:23AppSecurityKitFramework0B5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppSecurityKitFramework.SecurityEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecurityEvent",
+                        "printedName": "AppSecurityKitFramework.SecurityEvent",
+                        "usr": "s:23AppSecurityKitFramework0B5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23AppSecurityKitFramework0B5EventO16sslPinningFailedyA2CmF",
+            "mangledName": "$s23AppSecurityKitFramework0B5EventO16sslPinningFailedyA2CmF",
+            "moduleName": "AppSecurityKitFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "appAttestationFailed",
+            "printedName": "appAttestationFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppSecurityKitFramework.SecurityEvent.Type) -> AppSecurityKitFramework.SecurityEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecurityEvent",
+                    "printedName": "AppSecurityKitFramework.SecurityEvent",
+                    "usr": "s:23AppSecurityKitFramework0B5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppSecurityKitFramework.SecurityEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecurityEvent",
+                        "printedName": "AppSecurityKitFramework.SecurityEvent",
+                        "usr": "s:23AppSecurityKitFramework0B5EventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23AppSecurityKitFramework0B5EventO20appAttestationFailedyA2CmF",
+            "mangledName": "$s23AppSecurityKitFramework0B5EventO20appAttestationFailedyA2CmF",
+            "moduleName": "AppSecurityKitFramework"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityEvent",
+                "printedName": "AppSecurityKitFramework.SecurityEvent",
+                "usr": "s:23AppSecurityKitFramework0B5EventO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityEvent",
+                "printedName": "AppSecurityKitFramework.SecurityEvent",
+                "usr": "s:23AppSecurityKitFramework0B5EventO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23AppSecurityKitFramework0B5EventO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s23AppSecurityKitFramework0B5EventO2eeoiySbAC_ACtFZ",
+            "moduleName": "AppSecurityKitFramework",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23AppSecurityKitFramework0B5EventO9hashValueSivp",
+            "mangledName": "$s23AppSecurityKitFramework0B5EventO9hashValueSivp",
+            "moduleName": "AppSecurityKitFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework0B5EventO9hashValueSivg",
+                "mangledName": "$s23AppSecurityKitFramework0B5EventO9hashValueSivg",
+                "moduleName": "AppSecurityKitFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23AppSecurityKitFramework0B5EventO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s23AppSecurityKitFramework0B5EventO4hash4intoys6HasherVz_tF",
+            "moduleName": "AppSecurityKitFramework",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:23AppSecurityKitFramework0B5EventO",
+        "mangledName": "$s23AppSecurityKitFramework0B5EventO",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SecurityEventDelegate",
+        "printedName": "SecurityEventDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onSecurityEvent",
+            "printedName": "onSecurityEvent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityEvent",
+                "printedName": "AppSecurityKitFramework.SecurityEvent",
+                "usr": "s:23AppSecurityKitFramework0B5EventO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23AppSecurityKitFramework0B13EventDelegateP02onbE0yyAA0bE0OF",
+            "mangledName": "$s23AppSecurityKitFramework0B13EventDelegateP02onbE0yyAA0bE0OF",
+            "moduleName": "AppSecurityKitFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : AppSecurityKitFramework.SecurityEventDelegate>",
+            "sugared_genericSig": "<Self where Self : AppSecurityKitFramework.SecurityEventDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:23AppSecurityKitFramework0B13EventDelegateP",
+        "mangledName": "$s23AppSecurityKitFramework0B13EventDelegateP",
+        "moduleName": "AppSecurityKitFramework",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SecurityManager",
+        "printedName": "SecurityManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityManager",
+                "printedName": "AppSecurityKitFramework.SecurityManager",
+                "usr": "s:23AppSecurityKitFramework0B7ManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23AppSecurityKitFramework0B7ManagerC6sharedACvpZ",
+            "mangledName": "$s23AppSecurityKitFramework0B7ManagerC6sharedACvpZ",
+            "moduleName": "AppSecurityKitFramework",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecurityManager",
+                    "printedName": "AppSecurityKitFramework.SecurityManager",
+                    "usr": "s:23AppSecurityKitFramework0B7ManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework0B7ManagerC6sharedACvgZ",
+                "mangledName": "$s23AppSecurityKitFramework0B7ManagerC6sharedACvgZ",
+                "moduleName": "AppSecurityKitFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any AppSecurityKitFramework.SecurityEventDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23AppSecurityKitFramework0B7ManagerC8delegateAA0B13EventDelegate_pSgvpZ",
+            "mangledName": "$s23AppSecurityKitFramework0B7ManagerC8delegateAA0B13EventDelegate_pSgvpZ",
+            "moduleName": "AppSecurityKitFramework",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any AppSecurityKitFramework.SecurityEventDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecurityEventDelegate",
+                        "printedName": "any AppSecurityKitFramework.SecurityEventDelegate",
+                        "usr": "s:23AppSecurityKitFramework0B13EventDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework0B7ManagerC8delegateAA0B13EventDelegate_pSgvgZ",
+                "mangledName": "$s23AppSecurityKitFramework0B7ManagerC8delegateAA0B13EventDelegate_pSgvgZ",
+                "moduleName": "AppSecurityKitFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any AppSecurityKitFramework.SecurityEventDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecurityEventDelegate",
+                        "printedName": "any AppSecurityKitFramework.SecurityEventDelegate",
+                        "usr": "s:23AppSecurityKitFramework0B13EventDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework0B7ManagerC8delegateAA0B13EventDelegate_pSgvsZ",
+                "mangledName": "$s23AppSecurityKitFramework0B7ManagerC8delegateAA0B13EventDelegate_pSgvsZ",
+                "moduleName": "AppSecurityKitFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework0B7ManagerC8delegateAA0B13EventDelegate_pSgvMZ",
+                "mangledName": "$s23AppSecurityKitFramework0B7ManagerC8delegateAA0B13EventDelegate_pSgvMZ",
+                "moduleName": "AppSecurityKitFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityConfiguration",
+                "printedName": "AppSecurityKitFramework.SecurityConfiguration",
+                "usr": "s:23AppSecurityKitFramework0B13ConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23AppSecurityKitFramework0B7ManagerC5start4withyAA0B13ConfigurationV_tF",
+            "mangledName": "$s23AppSecurityKitFramework0B7ManagerC5start4withyAA0B13ConfigurationV_tF",
+            "moduleName": "AppSecurityKitFramework",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "securedSession",
+            "printedName": "securedSession(configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionConfiguration",
+                "printedName": "Foundation.URLSessionConfiguration",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSURLSessionConfiguration"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23AppSecurityKitFramework0B7ManagerC14securedSession13configurationSo12NSURLSessionCSo0I13ConfigurationC_tF",
+            "mangledName": "$s23AppSecurityKitFramework0B7ManagerC14securedSession13configurationSo12NSURLSessionCSo0I13ConfigurationC_tF",
+            "moduleName": "AppSecurityKitFramework",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:23AppSecurityKitFramework0B7ManagerC",
+        "mangledName": "$s23AppSecurityKitFramework0B7ManagerC",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Custom"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SecurityEnvironment",
+        "printedName": "SecurityEnvironment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "dev",
+            "printedName": "dev",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppSecurityKitFramework.SecurityEnvironment.Type) -> (Swift.String) -> AppSecurityKitFramework.SecurityEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> AppSecurityKitFramework.SecurityEnvironment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecurityEnvironment",
+                        "printedName": "AppSecurityKitFramework.SecurityEnvironment",
+                        "usr": "s:23AppSecurityKitFramework0B11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(bundleId: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppSecurityKitFramework.SecurityEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecurityEnvironment",
+                        "printedName": "AppSecurityKitFramework.SecurityEnvironment",
+                        "usr": "s:23AppSecurityKitFramework0B11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23AppSecurityKitFramework0B11EnvironmentO3devyACSS_tcACmF",
+            "mangledName": "$s23AppSecurityKitFramework0B11EnvironmentO3devyACSS_tcACmF",
+            "moduleName": "AppSecurityKitFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "qa",
+            "printedName": "qa",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppSecurityKitFramework.SecurityEnvironment.Type) -> (Swift.String) -> AppSecurityKitFramework.SecurityEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> AppSecurityKitFramework.SecurityEnvironment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecurityEnvironment",
+                        "printedName": "AppSecurityKitFramework.SecurityEnvironment",
+                        "usr": "s:23AppSecurityKitFramework0B11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(bundleId: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppSecurityKitFramework.SecurityEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecurityEnvironment",
+                        "printedName": "AppSecurityKitFramework.SecurityEnvironment",
+                        "usr": "s:23AppSecurityKitFramework0B11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23AppSecurityKitFramework0B11EnvironmentO2qayACSS_tcACmF",
+            "mangledName": "$s23AppSecurityKitFramework0B11EnvironmentO2qayACSS_tcACmF",
+            "moduleName": "AppSecurityKitFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "prod",
+            "printedName": "prod",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppSecurityKitFramework.SecurityEnvironment.Type) -> (Swift.String) -> AppSecurityKitFramework.SecurityEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> AppSecurityKitFramework.SecurityEnvironment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecurityEnvironment",
+                        "printedName": "AppSecurityKitFramework.SecurityEnvironment",
+                        "usr": "s:23AppSecurityKitFramework0B11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(bundleId: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppSecurityKitFramework.SecurityEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SecurityEnvironment",
+                        "printedName": "AppSecurityKitFramework.SecurityEnvironment",
+                        "usr": "s:23AppSecurityKitFramework0B11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23AppSecurityKitFramework0B11EnvironmentO4prodyACSS_tcACmF",
+            "mangledName": "$s23AppSecurityKitFramework0B11EnvironmentO4prodyACSS_tcACmF",
+            "moduleName": "AppSecurityKitFramework"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:23AppSecurityKitFramework0B11EnvironmentO",
+        "mangledName": "$s23AppSecurityKitFramework0B11EnvironmentO",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SecurityConfiguration",
+        "printedName": "SecurityConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "jailbreakProtectionEnabled",
+            "printedName": "jailbreakProtectionEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23AppSecurityKitFramework0B13ConfigurationV26jailbreakProtectionEnabledSbvp",
+            "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV26jailbreakProtectionEnabledSbvp",
+            "moduleName": "AppSecurityKitFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework0B13ConfigurationV26jailbreakProtectionEnabledSbvg",
+                "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV26jailbreakProtectionEnabledSbvg",
+                "moduleName": "AppSecurityKitFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugProtectionEnabled",
+            "printedName": "debugProtectionEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23AppSecurityKitFramework0B13ConfigurationV22debugProtectionEnabledSbvp",
+            "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV22debugProtectionEnabledSbvp",
+            "moduleName": "AppSecurityKitFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework0B13ConfigurationV22debugProtectionEnabledSbvg",
+                "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV22debugProtectionEnabledSbvg",
+                "moduleName": "AppSecurityKitFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "emulatorDetectionEnabled",
+            "printedName": "emulatorDetectionEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23AppSecurityKitFramework0B13ConfigurationV24emulatorDetectionEnabledSbvp",
+            "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV24emulatorDetectionEnabledSbvp",
+            "moduleName": "AppSecurityKitFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework0B13ConfigurationV24emulatorDetectionEnabledSbvg",
+                "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV24emulatorDetectionEnabledSbvg",
+                "moduleName": "AppSecurityKitFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tamperDetectionEnabled",
+            "printedName": "tamperDetectionEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23AppSecurityKitFramework0B13ConfigurationV22tamperDetectionEnabledSbvp",
+            "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV22tamperDetectionEnabledSbvp",
+            "moduleName": "AppSecurityKitFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework0B13ConfigurationV22tamperDetectionEnabledSbvg",
+                "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV22tamperDetectionEnabledSbvg",
+                "moduleName": "AppSecurityKitFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appAttestationEnabled",
+            "printedName": "appAttestationEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23AppSecurityKitFramework0B13ConfigurationV21appAttestationEnabledSbvp",
+            "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV21appAttestationEnabledSbvp",
+            "moduleName": "AppSecurityKitFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework0B13ConfigurationV21appAttestationEnabledSbvg",
+                "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV21appAttestationEnabledSbvg",
+                "moduleName": "AppSecurityKitFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sslPinningEnabled",
+            "printedName": "sslPinningEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23AppSecurityKitFramework0B13ConfigurationV17sslPinningEnabledSbvp",
+            "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV17sslPinningEnabledSbvp",
+            "moduleName": "AppSecurityKitFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework0B13ConfigurationV17sslPinningEnabledSbvg",
+                "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV17sslPinningEnabledSbvg",
+                "moduleName": "AppSecurityKitFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "runtimeManipulationDetectionEnabled",
+            "printedName": "runtimeManipulationDetectionEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23AppSecurityKitFramework0B13ConfigurationV35runtimeManipulationDetectionEnabledSbvp",
+            "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV35runtimeManipulationDetectionEnabledSbvp",
+            "moduleName": "AppSecurityKitFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework0B13ConfigurationV35runtimeManipulationDetectionEnabledSbvg",
+                "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV35runtimeManipulationDetectionEnabledSbvg",
+                "moduleName": "AppSecurityKitFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pinnedPublicKeyHashes",
+            "printedName": "pinnedPublicKeyHashes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23AppSecurityKitFramework0B13ConfigurationV21pinnedPublicKeyHashesShySSGvp",
+            "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV21pinnedPublicKeyHashesShySSGvp",
+            "moduleName": "AppSecurityKitFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework0B13ConfigurationV21pinnedPublicKeyHashesShySSGvg",
+                "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV21pinnedPublicKeyHashesShySSGvg",
+                "moduleName": "AppSecurityKitFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expectedBundleIdentifier",
+            "printedName": "expectedBundleIdentifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23AppSecurityKitFramework0B13ConfigurationV24expectedBundleIdentifierSSSgvp",
+            "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV24expectedBundleIdentifierSSSgvp",
+            "moduleName": "AppSecurityKitFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework0B13ConfigurationV24expectedBundleIdentifierSSSgvg",
+                "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV24expectedBundleIdentifierSSSgvg",
+                "moduleName": "AppSecurityKitFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(jailbreakProtectionEnabled:debugProtectionEnabled:emulatorDetectionEnabled:tamperDetectionEnabled:appAttestationEnabled:sslPinningEnabled:runtimeManipulationDetectionEnabled:pinnedPublicKeyHashes:expectedBundleIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityConfiguration",
+                "printedName": "AppSecurityKitFramework.SecurityConfiguration",
+                "usr": "s:23AppSecurityKitFramework0B13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sh"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23AppSecurityKitFramework0B13ConfigurationV26jailbreakProtectionEnabled05debuggH0017emulatorDetectionH006tamperkH0014appAttestationH0010sslPinningH0019runtimeManipulationkH021pinnedPublicKeyHashes24expectedBundleIdentifierACSb_S6bShySSGSSSgtcfc",
+            "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV26jailbreakProtectionEnabled05debuggH0017emulatorDetectionH006tamperkH0014appAttestationH0010sslPinningH0019runtimeManipulationkH021pinnedPublicKeyHashes24expectedBundleIdentifierACSb_S6bShySSGSSSgtcfc",
+            "moduleName": "AppSecurityKitFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "default",
+            "printedName": "default",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityConfiguration",
+                "printedName": "AppSecurityKitFramework.SecurityConfiguration",
+                "usr": "s:23AppSecurityKitFramework0B13ConfigurationV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23AppSecurityKitFramework0B13ConfigurationV7defaultACvpZ",
+            "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV7defaultACvpZ",
+            "moduleName": "AppSecurityKitFramework",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecurityConfiguration",
+                    "printedName": "AppSecurityKitFramework.SecurityConfiguration",
+                    "usr": "s:23AppSecurityKitFramework0B13ConfigurationV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework0B13ConfigurationV7defaultACvgZ",
+                "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV7defaultACvgZ",
+                "moduleName": "AppSecurityKitFramework",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "preset",
+            "printedName": "preset(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityConfiguration",
+                "printedName": "AppSecurityKitFramework.SecurityConfiguration",
+                "usr": "s:23AppSecurityKitFramework0B13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityEnvironment",
+                "printedName": "AppSecurityKitFramework.SecurityEnvironment",
+                "usr": "s:23AppSecurityKitFramework0B11EnvironmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23AppSecurityKitFramework0B13ConfigurationV6presetyAcA0B11EnvironmentOFZ",
+            "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV6presetyAcA0B11EnvironmentOFZ",
+            "moduleName": "AppSecurityKitFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:23AppSecurityKitFramework0B13ConfigurationV",
+        "mangledName": "$s23AppSecurityKitFramework0B13ConfigurationV",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Darwin",
+        "printedName": "Darwin",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Darwin",
+        "printedName": "Darwin",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "MachO",
+        "printedName": "MachO",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LogLevel",
+        "printedName": "LogLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "debug",
+            "printedName": "debug",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppSecurityKitFramework.LogLevel.Type) -> AppSecurityKitFramework.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AppSecurityKitFramework.LogLevel",
+                    "usr": "s:23AppSecurityKitFramework8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppSecurityKitFramework.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AppSecurityKitFramework.LogLevel",
+                        "usr": "s:23AppSecurityKitFramework8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23AppSecurityKitFramework8LogLevelO5debugyA2CmF",
+            "mangledName": "$s23AppSecurityKitFramework8LogLevelO5debugyA2CmF",
+            "moduleName": "AppSecurityKitFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppSecurityKitFramework.LogLevel.Type) -> AppSecurityKitFramework.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AppSecurityKitFramework.LogLevel",
+                    "usr": "s:23AppSecurityKitFramework8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppSecurityKitFramework.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AppSecurityKitFramework.LogLevel",
+                        "usr": "s:23AppSecurityKitFramework8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23AppSecurityKitFramework8LogLevelO4infoyA2CmF",
+            "mangledName": "$s23AppSecurityKitFramework8LogLevelO4infoyA2CmF",
+            "moduleName": "AppSecurityKitFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "warning",
+            "printedName": "warning",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppSecurityKitFramework.LogLevel.Type) -> AppSecurityKitFramework.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AppSecurityKitFramework.LogLevel",
+                    "usr": "s:23AppSecurityKitFramework8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppSecurityKitFramework.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AppSecurityKitFramework.LogLevel",
+                        "usr": "s:23AppSecurityKitFramework8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23AppSecurityKitFramework8LogLevelO7warningyA2CmF",
+            "mangledName": "$s23AppSecurityKitFramework8LogLevelO7warningyA2CmF",
+            "moduleName": "AppSecurityKitFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppSecurityKitFramework.LogLevel.Type) -> AppSecurityKitFramework.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AppSecurityKitFramework.LogLevel",
+                    "usr": "s:23AppSecurityKitFramework8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppSecurityKitFramework.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AppSecurityKitFramework.LogLevel",
+                        "usr": "s:23AppSecurityKitFramework8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23AppSecurityKitFramework8LogLevelO5erroryA2CmF",
+            "mangledName": "$s23AppSecurityKitFramework8LogLevelO5erroryA2CmF",
+            "moduleName": "AppSecurityKitFramework"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AppSecurityKitFramework.LogLevel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AppSecurityKitFramework.LogLevel",
+                    "usr": "s:23AppSecurityKitFramework8LogLevelO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23AppSecurityKitFramework8LogLevelO8rawValueACSgSS_tcfc",
+            "mangledName": "$s23AppSecurityKitFramework8LogLevelO8rawValueACSgSS_tcfc",
+            "moduleName": "AppSecurityKitFramework",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23AppSecurityKitFramework8LogLevelO8rawValueSSvp",
+            "mangledName": "$s23AppSecurityKitFramework8LogLevelO8rawValueSSvp",
+            "moduleName": "AppSecurityKitFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework8LogLevelO8rawValueSSvg",
+                "mangledName": "$s23AppSecurityKitFramework8LogLevelO8rawValueSSvg",
+                "moduleName": "AppSecurityKitFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:23AppSecurityKitFramework8LogLevelO",
+        "mangledName": "$s23AppSecurityKitFramework8LogLevelO",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SecureLogger",
+        "printedName": "SecureLogger",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isEnabled",
+            "printedName": "isEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23AppSecurityKitFramework12SecureLoggerC9isEnabledSbvpZ",
+            "mangledName": "$s23AppSecurityKitFramework12SecureLoggerC9isEnabledSbvpZ",
+            "moduleName": "AppSecurityKitFramework",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework12SecureLoggerC9isEnabledSbvgZ",
+                "mangledName": "$s23AppSecurityKitFramework12SecureLoggerC9isEnabledSbvgZ",
+                "moduleName": "AppSecurityKitFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework12SecureLoggerC9isEnabledSbvsZ",
+                "mangledName": "$s23AppSecurityKitFramework12SecureLoggerC9isEnabledSbvsZ",
+                "moduleName": "AppSecurityKitFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework12SecureLoggerC9isEnabledSbvMZ",
+                "mangledName": "$s23AppSecurityKitFramework12SecureLoggerC9isEnabledSbvMZ",
+                "moduleName": "AppSecurityKitFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "enable",
+            "printedName": "enable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23AppSecurityKitFramework12SecureLoggerC6enableyyFZ",
+            "mangledName": "$s23AppSecurityKitFramework12SecureLoggerC6enableyyFZ",
+            "moduleName": "AppSecurityKitFramework",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disable",
+            "printedName": "disable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23AppSecurityKitFramework12SecureLoggerC7disableyyFZ",
+            "mangledName": "$s23AppSecurityKitFramework12SecureLoggerC7disableyyFZ",
+            "moduleName": "AppSecurityKitFramework",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(isEnabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23AppSecurityKitFramework12SecureLoggerC9configure9isEnabledySb_tFZ",
+            "mangledName": "$s23AppSecurityKitFramework12SecureLoggerC9configure9isEnabledySb_tFZ",
+            "moduleName": "AppSecurityKitFramework",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(_:level:file:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> Swift.String",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "AppSecurityKitFramework.LogLevel",
+                "hasDefaultArg": true,
+                "usr": "s:23AppSecurityKitFramework8LogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23AppSecurityKitFramework12SecureLoggerC3log_5level4file4lineySSyXK_AA8LogLevelOSSSitFZ",
+            "mangledName": "$s23AppSecurityKitFramework12SecureLoggerC3log_5level4file4lineySSyXK_AA8LogLevelOSSSitFZ",
+            "moduleName": "AppSecurityKitFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:23AppSecurityKitFramework12SecureLoggerC",
+        "mangledName": "$s23AppSecurityKitFramework12SecureLoggerC",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Custom"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppSecurityKit",
+        "printedName": "AppSecurityKit",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23AppSecurityKitFramework0abC0O7versionSSvpZ",
+            "mangledName": "$s23AppSecurityKitFramework0abC0O7versionSSvpZ",
+            "moduleName": "AppSecurityKitFramework",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23AppSecurityKitFramework0abC0O7versionSSvgZ",
+                "mangledName": "$s23AppSecurityKitFramework0abC0O7versionSSvgZ",
+                "moduleName": "AppSecurityKitFramework",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "currentVersion",
+            "printedName": "currentVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23AppSecurityKitFramework0abC0O14currentVersionSSyFZ",
+            "mangledName": "$s23AppSecurityKitFramework0abC0O14currentVersionSSyFZ",
+            "moduleName": "AppSecurityKitFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityConfiguration",
+                "printedName": "AppSecurityKitFramework.SecurityConfiguration",
+                "hasDefaultArg": true,
+                "usr": "s:23AppSecurityKitFramework0B13ConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23AppSecurityKitFramework0abC0O5start4withyAA0B13ConfigurationV_tFZ",
+            "mangledName": "$s23AppSecurityKitFramework0abC0O5start4withyAA0B13ConfigurationV_tFZ",
+            "moduleName": "AppSecurityKitFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "activateScreenProtection",
+            "printedName": "activateScreenProtection()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23AppSecurityKitFramework0abC0O24activateScreenProtectionyyFZ",
+            "mangledName": "$s23AppSecurityKitFramework0abC0O24activateScreenProtectionyyFZ",
+            "moduleName": "AppSecurityKitFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:23AppSecurityKitFramework0abC0O",
+        "mangledName": "$s23AppSecurityKitFramework0abC0O",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppSecurityKitFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Attestation\/AppAttestationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 349,
+      "length": 36,
+      "value": "\"com.appsecuritykit.appattest.keyid\""
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Core\/SecurityManager.swift",
+      "kind": "StringLiteral",
+      "offset": 263,
+      "length": 28,
+      "value": "\"com.appsecuritykit.manager\""
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Core\/SecurityManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 457,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Core\/SecurityManager.swift",
+      "kind": "Array",
+      "offset": 516,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Core\/SecurityManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3102,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Core\/SecurityManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3147,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Core\/SecurityManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3194,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Core\/SecurityManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3239,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Core\/SecurityManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3283,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Core\/SecurityManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3323,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Core\/SecurityManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3381,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Core\/SecurityManager.swift",
+      "kind": "Array",
+      "offset": 3432,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Detection\/DebugProtection.swift",
+      "kind": "IntegerLiteral",
+      "offset": 234,
+      "length": 2,
+      "value": "31"
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Screen Protection\/ScreenProtectionManager.swift",
+      "kind": "Dictionary",
+      "offset": 287,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Utilities\/Logging\/SecureLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 164,
+      "length": 7,
+      "value": "\"DEBUG\""
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Utilities\/Logging\/SecureLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 188,
+      "length": 6,
+      "value": "\"INFO\""
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Utilities\/Logging\/SecureLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 214,
+      "length": 9,
+      "value": "\"WARNING\""
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Utilities\/Logging\/SecureLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 241,
+      "length": 7,
+      "value": "\"ERROR\""
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/Utilities\/Logging\/SecureLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 407,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kannan\/Documents\/Kannan\/AppSecurityKitFramework\/AppSecurityKitFramework\/Sources\/AppSecurityKit\/AppSecurityKit.swift",
+      "kind": "StringLiteral",
+      "offset": 152,
+      "length": 7,
+      "value": "\"1.1.0\""
+    }
+  ]
+}

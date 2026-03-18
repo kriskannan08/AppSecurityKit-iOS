@@ -1,25 +1,29 @@
 # SecurityKit
 
-This repository packages the released `AppSecurityKit.xcframework` as a reusable iOS dependency.
+This repository exposes the released `AppSecurityKit.xcframework` as a reusable iOS dependency through Swift Package Manager.
 
 ## Contents
 
-- `AppSecurityKit.xcframework`: Vendored binary framework from the upstream 1.2.1 release
-- `Package.swift`: Swift Package Manager manifest
+- `Package.swift`: Swift Package Manager manifest that points directly to the GitHub release zip
 - `AppSecurityKit.podspec`: CocoaPods specification
 
 ## Swift Package Manager
 
-Use the package locally from this folder, or push this repository and add it in Xcode:
+The package uses the release artifact directly:
+
+- URL: `https://github.com/kriskannan08/appSecurityKit_iOS/releases/download/v1.1.2/AppSecurityKit.xcframework.zip`
+- Checksum: `cb9d4f6a0fc654062b5be19e7764580cb67c7f54de5de9f31be8e46b92543925`
+
+Add the package in Xcode or in `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/kriskannan08/AppSecurityKit-iOS.git", branch: "main")
+.package(url: "https://github.com/your-org/SecurityKit.git", branch: "main")
 ```
 
-Then add the `AppSecurityKit` product to your target and import:
+Then add the `AppSecurityKitFramework` product to your target and import:
 
 ```swift
-import AppSecurityKit
+import AppSecurityKitFramework
 ```
 
 ## CocoaPods
@@ -32,5 +36,5 @@ pod "AppSecurityKit", :path => "/path/to/SecurityKit"
 
 ## Notes
 
-- The included binary contains iOS device (`arm64`) and simulator (`arm64`, `x86_64`) slices.
-- The vendored binary reports a minimum iOS version of `26.2`.
+- The linked binary contains iOS device (`arm64`) and simulator (`arm64`, `x86_64`) slices.
+- The binary reports a minimum iOS version of `26.2`.

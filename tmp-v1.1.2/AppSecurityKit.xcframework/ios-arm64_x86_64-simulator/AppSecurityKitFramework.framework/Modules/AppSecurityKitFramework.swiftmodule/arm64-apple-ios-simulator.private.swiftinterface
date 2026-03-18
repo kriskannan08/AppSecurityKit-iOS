@@ -1,0 +1,94 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios26.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AppSecurityKitFramework
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import CommonCrypto
+import Darwin
+import DeviceCheck
+import Foundation
+import MachO
+import Security
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum SecurityEvent {
+  case jailbreakDetected
+  case debuggerDetected
+  case emulatorDetected
+  case runtimeManipulationDetected
+  case appTamperingDetected
+  case sslPinningFailed
+  case appAttestationFailed
+  public static func == (a: AppSecurityKitFramework.SecurityEvent, b: AppSecurityKitFramework.SecurityEvent) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol SecurityEventDelegate : AnyObject {
+  func onSecurityEvent(_ event: AppSecurityKitFramework.SecurityEvent)
+}
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class SecurityManager {
+  @_Concurrency.MainActor public static let shared: AppSecurityKitFramework.SecurityManager
+  @_Concurrency.MainActor weak public static var delegate: (any AppSecurityKitFramework.SecurityEventDelegate)?
+  @_Concurrency.MainActor final public func start(with configuration: AppSecurityKitFramework.SecurityConfiguration)
+  @_Concurrency.MainActor final public func securedSession(configuration: Foundation.URLSessionConfiguration = .default) -> Foundation.URLSession
+  @objc deinit
+}
+public enum SecurityEnvironment {
+  case dev(bundleId: Swift.String)
+  case qa(bundleId: Swift.String)
+  case prod(bundleId: Swift.String)
+}
+public struct SecurityConfiguration : Swift.Sendable {
+  public let jailbreakProtectionEnabled: Swift.Bool
+  public let debugProtectionEnabled: Swift.Bool
+  public let emulatorDetectionEnabled: Swift.Bool
+  public let tamperDetectionEnabled: Swift.Bool
+  public let appAttestationEnabled: Swift.Bool
+  public let sslPinningEnabled: Swift.Bool
+  public let runtimeManipulationDetectionEnabled: Swift.Bool
+  public let pinnedPublicKeyHashes: Swift.Set<Swift.String>
+  public let expectedBundleIdentifier: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(jailbreakProtectionEnabled: Swift.Bool = true, debugProtectionEnabled: Swift.Bool = true, emulatorDetectionEnabled: Swift.Bool = true, tamperDetectionEnabled: Swift.Bool = true, appAttestationEnabled: Swift.Bool = true, sslPinningEnabled: Swift.Bool = true, runtimeManipulationDetectionEnabled: Swift.Bool = true, pinnedPublicKeyHashes: Swift.Set<Swift.String> = [], expectedBundleIdentifier: Swift.String? = nil)
+  #endif
+  public static let `default`: AppSecurityKitFramework.SecurityConfiguration
+  public static func preset(_ environment: AppSecurityKitFramework.SecurityEnvironment) -> AppSecurityKitFramework.SecurityConfiguration
+}
+public enum LogLevel : Swift.String {
+  case debug
+  case info
+  case warning
+  case error
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class SecureLogger {
+  @_Concurrency.MainActor public static var isEnabled: Swift.Bool
+  @_Concurrency.MainActor public static func enable()
+  @_Concurrency.MainActor public static func disable()
+  @_Concurrency.MainActor public static func configure(isEnabled: Swift.Bool)
+  @_Concurrency.MainActor public static func log(_ message: @autoclosure () -> Swift.String, level: AppSecurityKitFramework.LogLevel = .debug, file: Swift.String = #file, line: Swift.Int = #line)
+  @objc deinit
+}
+public enum AppSecurityKit {
+  public static let version: Swift.String
+  public static func currentVersion() -> Swift.String
+  @_Concurrency.MainActor public static func start(with configuration: AppSecurityKitFramework.SecurityConfiguration = .default)
+  @_Concurrency.MainActor public static func activateScreenProtection()
+}
+extension AppSecurityKitFramework.SecurityEvent : Swift.Equatable {}
+extension AppSecurityKitFramework.SecurityEvent : Swift.Hashable {}
+extension AppSecurityKitFramework.SecurityManager : Swift.Sendable {}
+extension AppSecurityKitFramework.LogLevel : Swift.Equatable {}
+extension AppSecurityKitFramework.LogLevel : Swift.Hashable {}
+extension AppSecurityKitFramework.LogLevel : Swift.RawRepresentable {}
+extension AppSecurityKitFramework.SecureLogger : Swift.Sendable {}
