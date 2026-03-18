@@ -13,7 +13,7 @@ This repository packages the released `AppSecurityKit.xcframework` as a reusable
 Use the package locally from this folder, or push this repository and add it in Xcode:
 
 ```swift
-.package(url: "https://github.com/your-org/SecurityKit.git", branch: "main")
+.package(url: "https://github.com/kriskannan08/AppSecurityKit-iOS.git", branch: "main")
 ```
 
 Then add the `AppSecurityKit` product to your target and import:
