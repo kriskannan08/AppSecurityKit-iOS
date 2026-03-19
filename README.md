@@ -11,19 +11,19 @@ This repository exposes the released `AppSecurityKit.xcframework` as a reusable 
 
 The package uses the release artifact directly:
 
-- URL: `https://github.com/kriskannan08/appSecurityKit_iOS/releases/download/v1.1.2/AppSecurityKit.xcframework.zip`
-- Checksum: `cb9d4f6a0fc654062b5be19e7764580cb67c7f54de5de9f31be8e46b92543925`
+- URL: `https://github.com/kriskannan08/appSecurityKit_iOS/releases/download/1.2.1/AppSecurityKit.xcframework.zip`
+- Checksum: `e8b11a821d496863cd768cf4554bb704aee1722f7165fae49afb5c2d69d63c62`
 
 Add the package in Xcode or in `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/your-org/SecurityKit.git", branch: "main")
+.package(url: "https://github.com/your-org/SecurityKit.git", .upToNextMajor(from: "1.2.1"))
 ```
 
-Then add the `AppSecurityKitFramework` product to your target and import:
+Then add the `AppSecurityKit` product to your target and import:
 
 ```swift
-import AppSecurityKitFramework
+import AppSecurityKit
 ```
 
 ## CocoaPods
