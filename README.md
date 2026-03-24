@@ -1,55 +1,174 @@
-# SecurityKit
+# AppSecurityKit
 
-This repository exposes the released `AppSecurityKit.xcframework` as a reusable iOS dependency through Swift Package Manager.
+**AppSecurityKit** is a modular, configurable security framework for iOS apps built with Swift and SwiftUI.
 
-## Contents
+It provides runtime protections such as SSL pinning, jailbreak detection, anti-debugging, tamper detection, emulator detection, and Apple App Attest integration, all configurable per project.
 
-- `Package.swift`: Swift Package Manager manifest that points directly to the GitHub release zip
-- `AppSecurityKit.podspec`: CocoaPods specification
+This repository distributes the released `AppSecurityKit.xcframework` through Swift Package Manager and CocoaPods.
 
-## Swift Package Manager
+## Features
 
-The package uses the release artifact directly:
+- Public key SSL pinning with primary and backup pins
+- Jailbreak detection
+- Anti-debug protection
+- Emulator detection
+- Tamper detection
+- Apple App Attest integration
+- Per-feature configuration
+- Swift concurrency compatible
 
-- URL: `https://github.com/kriskannan08/appSecurityKit_iOS/releases/download/1.2.1/AppSecurityKit.xcframework.zip`
-- Checksum: `e8b11a821d496863cd768cf4554bb704aee1722f7165fae49afb5c2d69d63c62`
+## Installation
 
-Add the package in Xcode or in `Package.swift`:
+### Swift Package Manager
 
-```swift
-.package(url: "https://github.com/kriskannan08/AppSecurityKit-iOS.git", from: "1.2.1")
+Add the package in Xcode:
+
+1. Open your project in Xcode.
+2. Go to `File > Add Package Dependencies...`
+3. Enter:
+
+```text
+https://github.com/kriskannan08/AppSecurityKit-iOS.git
 ```
 
-Then add the `AppSecurityKit` product to your target and import:
+4. Select the version you want to use.
+5. Add the `AppSecurityKit` product to your app target.
+
+You can also add it in your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/kriskannan08/AppSecurityKit-iOS.git", from: "1.2.1")
+]
+```
+
+Then add `AppSecurityKit` to your target dependencies and import it where needed:
 
 ```swift
 import AppSecurityKit
 ```
 
-### Why Xcode may only show `Branch`
+## Quick Start
 
-Swift Package Manager only enables version-based dependency rules when the package repository itself has a semantic version tag such as `1.2.1` or `v1.2.1`.
+### 1. Import
 
-That check is done against this repository:
+```swift
+import AppSecurityKit
+```
 
-- `https://github.com/kriskannan08/AppSecurityKit-iOS.git`
+### 2. Configure
 
-It is not enough for the binary artifact URL to point at a GitHub release zip. If this package repo has no semantic version tags, Xcode will only offer branch-based rules.
+```swift
+let config = SecurityConfiguration(
+    jailbreakProtectionEnabled: true,
+    debugProtectionEnabled: true,
+    emulatorDetectionEnabled: false,
+    tamperDetectionEnabled: true,
+    appAttestationEnabled: false,
+    sslPinningEnabled: true,
+    pinnedPublicKeyHashes: [
+        "PRIMARY_HASH_BASE64==",
+        "BACKUP_HASH_BASE64=="
+    ]
+)
+```
 
-To enable `Up to Next Major Version`, `Up to Next Minor Version`, or `Exact Version`, create and push a tag on this repo:
+### 3. Initialize
+
+```swift
+@main
+struct MyApp: App {
+    let config = SecurityConfiguration(
+        jailbreakProtectionEnabled: true,
+        debugProtectionEnabled: true,
+        emulatorDetectionEnabled: false,
+        tamperDetectionEnabled: true,
+        appAttestationEnabled: false,
+        sslPinningEnabled: true,
+        pinnedPublicKeyHashes: [
+            "PRIMARY_HASH_BASE64==",
+            "BACKUP_HASH_BASE64=="
+        ]
+    )
+
+    init() {
+        AppSecurityKit.start(with: config)
+        SecurityManager.delegate = AppSecurityDelegate()
+    }
+
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+                .onAppear {
+                    AppSecurityKit.activateScreenProtection()
+                }
+        }
+    }
+}
+```
+
+## Security Events
+
+You can listen to security violations using a delegate:
+
+```swift
+final class AppSecurityDelegate: SecurityEventDelegate {
+    func onSecurityEvent(_ event: SecurityEvent) {
+        print("Security Event:", event)
+
+        switch event {
+        case .sslPinningFailed:
+            break
+        case .debuggerDetected:
+            break
+        default:
+            break
+        }
+    }
+}
+```
+
+## Using Secured Networking
+
+If SSL pinning is enabled, use `securedSession()`:
+
+```swift
+let session = SecurityManager.shared.securedSession()
+
+let task = session.dataTask(with: url) { data, response, error in
+    // Handle response
+}
+task.resume()
+```
+
+If pinning is disabled or no pins are configured, a standard `URLSession` is returned.
+
+## SSL Pinning
+
+AppSecurityKit uses public key pinning, which:
+
+- Survives certificate renewals
+- Supports fallback pins
+- Allows seamless certificate rotation
+
+To generate a public key hash:
 
 ```bash
-git tag 1.2.1
-git push origin 1.2.1
+openssl s_client -connect yourdomain.com:443 -servername yourdomain.com | openssl x509 -pubkey -noout | openssl rsa -pubin -outform der | openssl dgst -sha256 -binary | openssl base64
 ```
 
-## CocoaPods
+Use the resulting Base64 string in `pinnedPublicKeyHashes`.
 
-Reference the podspec from a local path or published spec:
+## Apple App Attest
 
-```ruby
-pod "AppSecurityKit", :path => "/path/to/SecurityKit"
-```
+Supports:
+
+- Key generation
+- Secure storage in Keychain
+- Attestation
+- Assertion generation
+
+Backend validation is still required using Apple's App Attest APIs.
 
 ## Notes
 
