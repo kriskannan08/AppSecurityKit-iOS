@@ -4,7 +4,7 @@
 
 It provides runtime protections such as SSL pinning, jailbreak detection, anti-debugging, tamper detection, emulator detection, and Apple App Attest integration, all configurable per project.
 
-This repository distributes the released `AppSecurityKit.xcframework` through Swift Package Manager and CocoaPods.
+This repository distributes compiled XCFramework binaries through Swift Package Manager and CocoaPods. It does not include the Swift implementation sources.
 
 ## Features
 
@@ -38,9 +38,11 @@ You can also add it in your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/kriskannan08/AppSecurityKit-iOS.git", from: "1.2.1")
+    .package(url: "https://github.com/kriskannan08/AppSecurityKit-iOS.git", from: "2.0.2")
 ]
 ```
+
+For builds that must stay on a specific release, use an exact version requirement and commit the app's `Package.resolved` file.
 
 Then add `AppSecurityKit` to your target dependencies and import it where needed:
 
@@ -173,4 +175,4 @@ Backend validation is still required using Apple's App Attest APIs.
 ## Notes
 
 - The linked binary contains iOS device (`arm64`) and simulator (`arm64`, `x86_64`) slices.
-- The binary reports a minimum iOS version of `26.2`.
+- The minimum iOS deployment target is 15.0.
